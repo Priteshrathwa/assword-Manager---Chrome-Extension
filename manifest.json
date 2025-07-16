@@ -1,0 +1,12 @@
+
+{
+  "manifest_version": 3,
+  "name": "Simple Password Manager1",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Password Manager"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"]
+}

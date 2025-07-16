@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="lockScreen">
+    <h2>🔐 Enter Master Password</h2>
+    <input type="password" id="masterInput" placeholder="Master Password" />
+    <button id="unlockBtn">Unlock</button>
+    <p id="lockMessage"></p>
+  </div>
+
+  <div id="mainUI" style="display:none;">
+    <h2>🔐 Password Manager</h2>
+
+    <div class="form-group">
+      <input type="text" id="service" placeholder="Service">
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="username" placeholder="Username">
+    </div>
+
+    <div class="form-group password-row">
+      <input type="password" id="password" placeholder="Password">
+      <button id="toggle">👁️</button>
+    </div>
+
+    <div class="btn-group">
+      <button id="saveBtn">💾 Save</button>
+      <button id="getBtn">📥 Get</button>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="crypto-js/aes.js"></script>
+  <script src="crypto-js/sha256.js"></script>
+  <script src="crypto-js/enc-utf8.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
