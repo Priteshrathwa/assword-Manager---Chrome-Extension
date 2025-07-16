@@ -15,6 +15,23 @@ A simple and secure Chrome extension to store, encrypt, and retrieve your passwo
 - 🖥️ Fully local (no server or external API)
 
 ---
+| Technology                   | Purpose                    |
+| ---------------------------- | -------------------------- |
+| HTML, CSS, JS                | Core structure and styling |
+| **CryptoJS**                 | AES encryption/decryption  |
+| **Chrome Storage API**       | Secure local data storage  |
+| Chrome Extension Manifest v3 | Extension environment      |
+
+preview 
+<h2 align="center"><strong>master password</strong></h2>
+<img width="1920" height="1080" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/598a7492-918b-4616-b98a-669cdab27d7a" />
+
+<h2 align="center"><strong>saving password</strong></h2>
+<img width="1920" height="1080" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/2609eb4d-10ac-4056-855e-e4048f0edbda" />
+
+<h2 align="center"><strong>getting password</strong></h2>
+
+<img width="1920" height="1080" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/cdce49e6-832e-407b-9238-68cedce3b129" />
 
 ## 🛠️ Installation
 
@@ -45,6 +62,7 @@ password-manager/
 - First launch: it will ask you to set a master password (stored as a SHA256 hash).
 - All passwords are AES-encrypted using this master password.
 - Passwords are stored locally via `chrome.storage.local`.
+
 
 ---
 
